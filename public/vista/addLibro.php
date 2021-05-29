@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Ingresar Libro</title>
     <script type="text/javascript" src="validaciones_usuario.js"></script>
-    <link href="../controladores/estiloCrear.css" rel="stylesheet" />
+    <link href="../controladores/estiloLibro.css" rel="stylesheet" />
     <style type="text/css">
         .error {
             color: rgb(255, 230, 0);
@@ -13,7 +13,7 @@
 </head>
 <div class="login">
     <div class="login-header">
-        <h1>Ingreso del Libro</h1>
+        <h1>Ingreso </h1>
     </div>
     <div class="login-form">
 

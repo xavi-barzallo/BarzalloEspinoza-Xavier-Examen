@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pagina principal</title>
-    <link href="../controladores/estilosPrincipal.css" rel="stylesheet" />
+    <link href="../controladores/estiloPrincipal.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="../../config/buscar.js"></script>
 </head>
@@ -16,6 +16,7 @@
         <div class="login-form">
             <form onsubmit="return buscarTelefonos()">
                 <a href="addLibro.php">Ingresar Libro</a>
+                <br>
                 <h3 for="telefono">Telefonos:</h3>
                 <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese el correo o cedula ..." />
                 <input type="submit" id="buscar" name="buscar" value="Buscar" onclick="buscarTelefonos()" />
