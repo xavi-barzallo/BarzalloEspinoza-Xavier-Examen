@@ -23,7 +23,7 @@
                 <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese el nombre del libro ..."/>
                 <br>
                 <h3 for="nombres">ISBN (*)</h3>
-                <input type="text" id="isbn" name="isbn" value="" placeholder="Ingrese el ISBN ..."  />
+                <input type="text" id="isbn" name="isbn" value="" placeholder="Ingrese el ISBN ..." maxlength="10" />
                 
                 <br>
                 <h3 for="numero">Numero de Paginas (*)</h3>
