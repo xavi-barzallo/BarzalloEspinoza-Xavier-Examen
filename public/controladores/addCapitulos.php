@@ -1,4 +1,3 @@
-<!DOCTYPE html> 
 <html> 
     <head> 
         <meta charset="UTF-8"> 
@@ -8,9 +7,14 @@
         color: red; 
         } 
         </style> 
+        <link href="estiloCapitulo.css" rel="stylesheet" />
     </head> 
     <body> 
-
+    <div class="login">
+    <div class="login-header">
+        <h1>Ingreso </h1>
+    </div>
+    <div class="login-form">
         <?php 
         $isbn=$_GET['isbn']; 
             //incluir conexión a la base de datos 
@@ -43,8 +47,7 @@
             $sql3 = "INSERT into capitulos values (null, $numCapi, '$titulo', $codLibro, $codAutor )";
             if ($conn->query($sql3) === TRUE) { 
                 echo "<p>El capitulo se a creado correctament!!</p>"; 
-                echo "<a href='../vista/addCapitulos.php?isbn=$isbn'>Agregar Capitulos</a>"; 
-                echo "<a href='../vista/Principal.html'>Regresar</a>"; 
+                echo "<a href='../vista/addCapitulos.php?isbn=$isbn'>Agregar Capitulos</a>";
             } else { 
                 if($conn->errno == 1062){ 
                     echo "<p class='error'>El Libro con el $isbn ya esta registrada en el sistema </p>"; 
@@ -56,5 +59,7 @@
                 //cerrar la base de datos 
             $conn->close(); 
         ?> 
+        </div>
+</div>
     </body> 
 </html>

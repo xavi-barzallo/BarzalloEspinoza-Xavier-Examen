@@ -4,7 +4,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
       background-size: 100% 110%;
   }
-  h1, h2, h3, h4, h5, h6, a, label {
+  h1, h2, h3, h4, h5, h6, a, label, p {
     margin:0; padding:0;
   }
   .login {
@@ -24,7 +24,7 @@ body {
     border-radius:10px;
     box-shadow:0px 0px 10px rgb(0, 234, 255);
   }
-  .login-form h3 {
+  .login-form h3, p, a {
     text-align:left;
     margin-left:40px;
     color:rgb(255, 255, 255);

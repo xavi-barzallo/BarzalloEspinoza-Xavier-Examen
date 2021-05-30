@@ -1,4 +1,3 @@
-<!DOCTYPE html> 
 <html> 
     <head> 
         <meta charset="UTF-8"> 
@@ -8,8 +7,14 @@
         color: red; 
         } 
         </style> 
+
+<link href="estiloCapitulo.css" rel="stylesheet" />
     </head> 
     <body> 
+    <div class="login">
+    <div class="login-header">
+    </div>
+    <div class="login-form">
         <?php 
             //incluir conexión a la base de datos 
             include '../../config/conexionBD.php'; 
@@ -33,7 +38,9 @@
             
                 //cerrar la base de datos 
             $conn->close(); 
-            echo "<a href='../vista/Principal.html'>Regresar</a>"; 
         ?> 
+
+</div>
+</div> 
     </body> 
 </html>
