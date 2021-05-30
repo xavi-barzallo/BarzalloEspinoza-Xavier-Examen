@@ -26,7 +26,7 @@ echo $autor;
  echo " <td>" . $row['aut_nacionalidad'] . "</td>";
 
  echo " <td>" . $row['lib_nombre'] . "</td>";
- echo " <td>" . $row['lib_isbn'] . "</td>";
+ echo " <td>" . $row['lib_ISBN'] . "</td>";
  echo " <td>" . $row['lib_num_pag'] . "</td>";
 
  echo " <td>" . $row['cap_titulo'] . "</td>";

@@ -49,7 +49,7 @@
     <br>
     <br>
                 <input type="submit" id="crear" name="crear" value="Ingresar" />
-                <input type="reset" id="cancelar" name="cancelar" value="Regresar" onclick="location.href='login.html'" />
+                <input type="reset" id="cancelar" name="cancelar" value="Regresar" onclick="location.href='Principal.html'" />
             </form>
     </div>
 </div>
