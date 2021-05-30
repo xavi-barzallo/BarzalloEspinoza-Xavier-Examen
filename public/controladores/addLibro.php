@@ -22,6 +22,7 @@
            
             if ($conn->query($sql) === TRUE) { 
                 echo "<p>Se ha creado El Libro correctamemte!!</p>"; 
+                echo "<a href='../vista/addCapitulos.php?isbn=$isbn'>Agregar Capitulos</a>"; 
             } else { 
                 if($conn->errno == 1062){ 
                     echo "<p class='error'>El Libro con el $isbn ya esta registrada en el sistema </p>"; 
@@ -32,7 +33,7 @@
             
                 //cerrar la base de datos 
             $conn->close(); 
-            echo "<a href='../vista/crear_usuario.html'>Regresar</a>"; 
+            echo "<a href='../vista/Principal.html'>Regresar</a>"; 
         ?> 
     </body> 
 </html>

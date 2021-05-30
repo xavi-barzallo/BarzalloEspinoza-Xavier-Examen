@@ -1,31 +1,37 @@
 <?php
  //incluir conexión a la base de datos
  include "../../config/conexionBD.php";
- $cedula = $_GET['cedula'];
- //echo "Hola " . $cedula;
-
- $sql = "SELECT * FROM usuario u,telefono t WHERE u.usu_eliminado = 'N' and u.usu_cedula='$cedula'";
+ $autor = $_GET['autor'];
+echo $autor;
+ $sql = "SELECT * FROM autor a , capitulos c, libro l WHERE  a.aut_codigo=c.cod_autor AND l.lib_codigo=c.cod_libro AND a.aut_nombre='$autor'";
 
 //cambiar la consulta para puede buscar por ocurrencias de letras
  $result = $conn->query($sql);
  echo " <table style='width:100%'>
  <tr>
- <th>Cedula</th>
- <th>Correo</th>
- <th>Numero de telefono</th>
- <th>Operadora</th>
- <th></th>
- <th></th>
- <th></th>
+ <th>Autor</th>
+ <th>Nacionalidad</th>
+ <th>Nombre del Libro</th>
+ <th>ISBN</th>
+ <th>Numero de Paginas</th>
+ <th>Titulo Capitulo</th>
+ <th>Numero Capitulo</th>
+ 
  </tr>";
  if ($result->num_rows > 0) {
  while($row = $result->fetch_assoc()) {
 
  echo "<tr>";
- echo " <td>" . $row['usu_cedula'] . "</td>";
- echo " <td><a href='mailto:". $row['usu_correo']. "'>". $row['usu_correo']. "</a></td>";
- echo " <td><a href='mailto:" . $row['tel_numero'] . "'>" . $row['tel_numero'] . "</a></td>";
- echo " <td>" . $row['tel_operadora'] . "</td>";
+ echo " <td>" . $row['aut_nombre'] . "</td>";
+ echo " <td>" . $row['aut_nacionalidad'] . "</td>";
+
+ echo " <td>" . $row['lib_nombre'] . "</td>";
+ echo " <td>" . $row['lib_isbn'] . "</td>";
+ echo " <td>" . $row['lib_num_pag'] . "</td>";
+
+ echo " <td>" . $row['cap_titulo'] . "</td>";
+ echo " <td>" . $row['cap_numero'] . "</td>";
+  
  echo "</tr>";
  }
  } else {

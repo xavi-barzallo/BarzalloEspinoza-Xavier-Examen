@@ -1,7 +1,7 @@
-function buscarTelefonos() {
-    var cedula = document.getElementById("cedula").value;
-    console.log(cedula)
-    if (cedula == "") {
+function buscarAutor() {
+    var autor = document.getElementById("autor").value;
+    console.log(autor)
+    if (autor == "") {
         document.getElementById("informacion").innerHTML = "";
     } else {
         if (window.XMLHttpRequest) {
@@ -17,7 +17,7 @@ function buscarTelefonos() {
                 document.getElementById("informacion").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "../../public/controladores/buscar.php?cedula=" + cedula, true);
+        xmlhttp.open("GET", "../public/controladores/buscar.php?autor=" + autor, true);
         xmlhttp.send();
     }
     return false;
