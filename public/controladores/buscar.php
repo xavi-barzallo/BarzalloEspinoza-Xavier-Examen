@@ -29,6 +29,7 @@ echo $autor;
  echo " <td>" . $row['lib_ISBN'] . "</td>";
  echo " <td>" . $row['lib_num_pag'] . "</td>";
 
+ 
  echo " <td>" . $row['cap_titulo'] . "</td>";
  echo " <td>" . $row['cap_numero'] . "</td>";
   
